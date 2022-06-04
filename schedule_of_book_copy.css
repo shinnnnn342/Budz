@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background: #ffeffe;
+}
+
+.logo {
+    width: 50px;
+    margin-left: 40px;
+}
+
+.nav-link {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 20px;
+}
+
+.nav-link:after {
+    content: "";
+    position: absolute;
+    background-color: #980799;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+}
+
+.collapse {
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    position: absolute;
+    right: 80px;
+    margin-top: 0px;
+    background-color: #00c4ce;
+    color: #fff;
+}
+
+.btn:hover {
+    box-shadow: 1px 1px 10px 1px;
+    transition: 0.5s;
+    color: #fff;
+}
+
+@media only screen and (max-width: 991px) {
+    .logo {
+        width: 50px;
+        margin-left: 20px;
+    }
+    .nav-link {
+        font-size: 16px;
+        font-weight: bold;
+        color: #0275d8;
+        padding: 15px 0px;
+    }
+    .btn {
+        position: relative;
+        left: 45%;
+        margin: 15px 0;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .btn {
+        position: relative;
+        left: 39%;
+    }
+}
+
+
+/* Floating icon Section */
+
+.side:hover {
+    width: 250px;
+    transition: 1s ease;
+}
+
+.side {
+    position: fixed;
+    width: 45px;
+    margin-top: 250px;
+    transition: all 0.3s linear;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.4);
+    list-style: none;
+    right: 0;
+    z-index: 10;
+}
+
+.side li {
+    height: 50px;
+    position: relative;
+    text-decoration: none;
+    list-style: none;
+}
+
+.side li .hoverA {
+    color: rgb(0, 0, 0);
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 60px;
+    padding-left: 25%;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.4);
+}
+
+.side li:nth-child(1) .hoverA {
+    background: #0695ff;
+}
+
+.side li:nth-child(2) .hoverA {
+    background-image: linear-gradient(#ff6968, #a334fa, #0695ff);
+}
+
+.side li:nth-child(3) .hoverA {
+    background-image: linear-gradient(#34a853, #34a853, #34a853);
+}
+
+.side-media {
+    width: 40px;
+    height: 25px;
+    padding-right: 15px;
+    margin-bottom: 10px;
+}
+
+
+/* Booking Section */
+
+.pb-2 {
+    margin-bottom: 40px;
+    color: #980799;
+    font-weight: 700;
+}
+
+#contact_id {
+    background-color: #fff;
+    letter-spacing: 2px;
+    margin: 80px 0;
+}
+
+#contact_id a {
+    color: #000000;
+    text-decoration: none;
+}
+
+@media (max-width: 575.98px) {
+    #contact_id {
+        padding-bottom: 0px;
+    }
+    #contact_id .maps iframe {
+        width: 100%;
+        height: 450px;
+    }
+}
+
+@media (min-width: 576px) {
+    #contact_id .maps iframe {
+        width: 100%;
+        height: 450px;
+    }
+}
+
+@media (min-width: 768px) {
+    #contact_id .maps iframe {
+        width: 100%;
+        height: 850px;
+    }
+}
+
+@media (min-width: 992px) {
+    #contact_id .maps iframe {
+        width: 100%;
+        height: 700px;
+    }
+}
+
+.image_book {
+    width: 100%;
+    height: 100%;
+}
+
+.book_time_title {
+    margin-left: 50px;
+    position: absolute;
+    right: -72px;
+    bottom: 28px;
+}
+
+
+/* Slider image */
+
+.date_time_container {
+    margin-top: 80px;
+}
+
+.title_sched {
+    margin-bottom: 100px;
+}
+
+.h1_choose {
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .col-md {
+        margin-top: 40px;
+    }
+}
+
+.btn_submit {
+    background: #00c5ce;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 0 6px;
+    padding: 5px 30px;
+    color: #fff;
+    background: #00c5ce;
+    border-color: #00c5ce;
+}
+
+.btn_submit:hover {
+    background: #980799;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    transition: 0.5s ease-out;
+    border-color: #980799;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px;
+    }
+}
+
+
+/* Footer */
+
+.footer-container {
+    margin-top: 100px;
+}
+
+.image-footer {
+    width: 24px;
+    height: 23px;
+    margin: 0 10px;
+}
+
+.social-med-h3 {
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.links-ul {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav-link {
+    color: #980799;
+}
+
+.calculator {
+    position: relative;
+    display: grid;
+    outline: 5px solid white;
+}
+
+.calculator input {
+    background: #90586f;
+    color: white;
+}
+
+.calculator .value {
+    grid-column: span 4;
+    height: 70px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.calculator span {
+    display: grid;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    background: #282141;
+    place-items: center;
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.calculator span:hover {
+    background: #f48940;
+    color: white;
+}
+
+.calculator span.clear {
+    grid-column: span 2;
+    width: 120px;
+}
+
+.calculator span.equal {
+    grid-column: span 2;
+    width: 120px;
+}
+
+.calculator span.plus {
+    grid-row: span 2;
+    height: 120px;
+}

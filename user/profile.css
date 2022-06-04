@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    background: #ffeffe;
+}
+
+.logo {
+    width: 50px;
+    margin-left: 40px;
+}
+
+.nav-link {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 20px;
+    color: #980799;
+}
+
+.nav-link:after {
+    content: "";
+    position: absolute;
+    background-color: #980799;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+}
+
+.collapse {
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    position: absolute;
+    right: 80px;
+    margin-top: 0px;
+    background-color: #00c5ce;
+}
+
+.btn_sign {
+    display: inline-block;
+    font-weight: 600;
+    right: 80px;
+    margin-top: 0px;
+    background-color: #00c5ce;
+}
+
+.btn_reg {
+    display: inline-block;
+    font-weight: 600;
+    right: 80px;
+    margin-top: 0px;
+    background-color: #00c5ce;
+}
+
+@media only screen and (max-width: 991px) {
+    .logo {
+        width: 50px;
+        margin-left: 20px;
+    }
+    .nav-link {
+        font-size: 16px;
+        font-weight: bold;
+        padding: 15px 0px;
+    }
+    .btn_sign {
+        position: relative;
+        left: 45%;
+        margin: 15px 0;
+    }
+    .btn {
+        position: relative;
+        left: 45%;
+        margin: 15px 0;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .btn_sign {
+        position: relative;
+        left: 39%;
+    }
+    .btn {
+        position: relative;
+        left: 39%;
+    }
+}
+
+/* Footer */ 
+#cont_footer {
+    margin-top: 300px;
+}
+.image-footer {
+    width: 24px;
+    height: 23px;
+    margin: 0 10px;
+}
+
+.social-med-h3 {
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.links-ul {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+}
+/*
+.title {
+    color: #980799;
+    font-size: 50px;
+    font-weight: 600;
+    position: absolute;
+    margin-left: 40%;
+}
+*/

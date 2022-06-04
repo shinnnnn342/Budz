@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    background: #ffeffe;
+}
+
+.logo {
+    width: 50px;
+    margin-left: 40px;
+}
+
+.nav-link {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 20px;
+    color: #980799;
+}
+
+.nav-link:after {
+    content: "";
+    position: absolute;
+    background-color: #980799;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+}
+
+.collapse {
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    position: absolute;
+    right: 80px;
+    margin-top: 0px;
+    background-color: #00c5ce;
+}
+
+.btn_register {
+    background-color: #00c5ce;
+    display: inline-block;
+    font-weight: 600;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+    color: white;
+}
+
+.btn_login {
+    background-color: #00c5ce;
+    display: inline-block;
+    font-weight: 600;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+    color: white;
+}
+
+@media only screen and (max-width: 991px) {
+    .logo {
+        width: 50px;
+        margin-left: 20px;
+    }
+    .nav-link {
+        font-size: 16px;
+        font-weight: bold;
+        padding: 15px 0px;
+    }
+    .btn {
+        position: relative;
+        left: 45%;
+        margin: 15px 0;
+    }
+    .btn_register {
+        position: relative;
+        left: 45%;
+        margin: 15px 0;
+    }
+    .btn_login {
+        position: relative;
+        left: 45%;
+        margin: 15px 0;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .btn {
+        position: relative;
+        left: 39%;
+    }
+    .btn_register {
+        position: relative;
+        left: 39%;
+    }
+    .btn_login {
+        position: relative;
+        left: 39%;
+    }
+}
+
+
+/* Home Page */
+
+.btn:hover {
+    background: #980799;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+.btn_register:hover {
+    background: #980799;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+.btn_login:hover {
+    background: #980799;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+
+/* Deals */
+
+.img_deals {
+    width: 170px;
+    padding: 50px 0px;
+    list-style: none;
+}
+
+
+/* How it works */
+
+.hiw-desc {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.hiw-parag {
+    font-size: 15px;
+    text-align: center;
+}
+
+
+/* Testimonials */
+
+.testimonials-cont {
+    min-width: 90vw;
+    min-height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    flex-direction: column;
+    padding-top: 13%;
+    padding-bottom: 5%;
+    font-weight: 500;
+}
+
+.pb-2-testimonials {
+    margin-bottom: 80px;
+    width: 75%;
+}
+
+.t-container .card {
+    max-width: 300px;
+    height: 215px;
+    margin: 30px 50px;
+    padding: 20px 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.2s ease-in-out;
+}
+
+.t-container .card:hover {
+    height: 596px;
+}
+
+.ratings {
+    position: relative;
+    top: 5px;
+    right: 5px;
+    width: 150px;
+}
+
+.ratings_last {
+    position: relative;
+    top: 35px;
+    right: 25px;
+    width: 150px;
+}
+
+.t-container .card .imgContainer {
+    position: relative;
+    width: 260px;
+    height: 250px;
+    top: -50px;
+    left: 10px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.t-container .card .imgContainer img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.t-container .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #000;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.4s ease-in-out;
+}
+
+.t-container .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+.h2 {
+    font-weight: 300;
+}
+
+.p {
+    font-weight: 300;
+}
+
+@media (max-width: 330px) {
+    .container .card .imgContainer {
+        left: -2px;
+    }
+}
+
+
+/* Floating icon Section */
+
+.side:hover {
+    width: 250px;
+    transition: 1s ease;
+}
+
+.side {
+    position: fixed;
+    width: 45px;
+    margin-top: 330px;
+    transition: all 0.3s linear;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.4);
+    list-style: none;
+    right: 0;
+    z-index: 10;
+}
+
+.side li {
+    height: 50px;
+    position: relative;
+    text-decoration: none;
+    list-style: none;
+}
+
+.side li .hoverA {
+    color: rgb(0, 0, 0);
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 60px;
+    padding-left: 25%;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.4);
+}
+
+.side li:nth-child(1) .hoverA {
+    background: #0695ff;
+}
+
+.side li:nth-child(2) .hoverA {
+    background-image: linear-gradient(#ff6968, #a334fa, #0695ff);
+}
+
+.side li:nth-child(3) .hoverA {
+    background-image: linear-gradient(#34a853, #34a853, #34a853);
+}
+
+.side-media {
+    width: 40px;
+    height: 25px;
+    padding-right: 15px;
+    margin-bottom: 10px;
+}
+
+
+/* Footer */
+
+.footer-container {
+    margin-top: 100px;
+}
+
+.image-footer {
+    width: 24px;
+    height: 23px;
+    margin: 0 10px;
+}
+
+.social-med-h3 {
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.links-ul {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+}
+
+.error {
+    width: 92%;
+    margin: 0px auto;
+    padding: 10px;
+    border: 1px solid #a94442;
+    color: #a94442;
+    background: #f2dede;
+    border-radius: 5px;
+    text-align: left;
+}
